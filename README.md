@@ -3,7 +3,7 @@
 Traditional web development requires HTML, CSS, and JavaScript.
 Streamlit allows you to build beautiful, interactive frontend user interfaces (UIs) entirely in Python with just a few lines of code.
 
-## to run the app in terminal ```python -m streamlit run app.py```
+#### to run the app in terminal ```python -m streamlit run app.py```
 
 
 ### 2. Google Gemini API (google-generativeai): 
