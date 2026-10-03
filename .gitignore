@@ -1,5 +1,0 @@
-venv/
-.env
-
-# venv creates isolated, self-contained directories for your projects. 
-# It allows each project to have its own Python interpreter and its own set of installed libraries and dependencies, preventing conflicts between projects and keeping your main system Python clean

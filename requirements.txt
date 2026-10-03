@@ -1,6 +1,0 @@
-streamlit
-pandas
-google-generativeai
-pypdf
-python-dotenv
-plotly
