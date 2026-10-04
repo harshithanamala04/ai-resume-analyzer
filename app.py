@@ -190,6 +190,36 @@ div.stButton > button {
     border-radius: 8px !important;
 }
 
+/* White color for Upload Resume (PDF format) and widget labels */
+[data-testid="stFileUploader"] label,
+[data-testid="stFileUploader"] label p,
+[data-testid="stFileUploader"] label span,
+[data-testid="stFileUploader"] label div,
+[data-testid="stFileUploader"] [data-testid="stWidgetLabel"],
+[data-testid="stFileUploader"] [data-testid="stWidgetLabel"] p,
+[data-testid="stFileUploader"] [data-testid="stWidgetLabel"] span,
+[data-testid="stFileUploader"] [data-testid="stWidgetLabel"] div,
+.stFileUploader label,
+.stFileUploader label p,
+.stFileUploader [data-testid="stWidgetLabel"] p,
+.st-key-resume_uploader label,
+.st-key-resume_uploader label p,
+.st-key-resume_uploader [data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] p,
+[data-testid="stWidgetLabel"] label {
+    color: #ffffff !important;
+    font-size: 0.95rem !important;
+    font-weight: 500 !important;
+}
+
+/* Tooltip/help icon for file uploader */
+[data-testid="stFileUploader"] [data-testid="stTooltipIcon"] svg,
+[data-testid="stFileUploader"] label svg,
+[data-testid="stTooltipIcon"] svg {
+    fill: #ffffff !important;
+    color: #ffffff !important;
+}
+
 /* Completely hide sidebar and collapse toggle */
 [data-testid="stSidebar"], [data-testid="collapsedControl"] {
     display: none !important;
@@ -435,7 +465,8 @@ with col_left:
     uploaded_file = st.file_uploader(
         "Upload Resume (PDF format)",
         type=["pdf"],
-        help="Upload the PDF resume to evaluate."
+        help="Upload the PDF resume to evaluate.",
+        key="resume_uploader"
     )
     
     # Optional text fallback
